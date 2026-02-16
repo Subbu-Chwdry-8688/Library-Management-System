@@ -1,0 +1,107 @@
+Library Management System Documentation
+
+Project Title:
+
+Library Management System (LMS)
+
+Objective:
+
+To create a menu-based library management system that allows users to perform operations such as adding books, issuing books, returning books, viewing book details, and managing users, all through an easy-to-use console interface.
+
+Features:
+
+Book Management: Add, remove, or search books in the library.
+
+User Management: Register users, update user information, and track issued books.
+
+Issue and Return Books: Track the status of issued books and allow book returns.
+
+Search Functionality: Search for books by title, author, or ISBN.
+
+System Requirements:
+
+Python 3.x
+
+Basic knowledge of OOP concepts (Classes, Methods, Inheritance, Polymorphism)
+
+Main Components:
+
+Classes and Their Responsibilities
+
+Book
+
+Represents a book in the library.
+
+Attributes: book_id, title, author, isbn, available_copies
+
+Methods:
+
+__init__() – Constructor to initialize book details.
+
+display_book_info() – Displays the information of a book.
+
+is_available() – Returns True if the book is available for issue, False otherwise.
+
+update_copies() – Updates the number of available copies when a book is issued or returned.
+
+
+User
+
+Represents a user of the library.
+
+Attributes: user_id, name, email, issued_books (a list of books issued by the user).
+
+Methods:
+
+__init__() – Constructor to initialize user details.
+
+display_user_info() – Displays user information.
+
+issue_book() – Issues a book to the user.
+
+return_book() – Allows the user to return a book.
+
+list_issued_books() – Lists all books currently issued to the user.
+
+
+
+Library
+
+Manages the overall functionality of the library, including book and user management.
+
+Attributes: books (list of Book objects), users (list of User objects).
+
+Methods:
+
+add_book() – Adds a new book to the library.
+
+remove_book() – Removes a book from the library.
+
+search_book() – Searches for books by title, author, or ISBN.
+
+add_user() – Registers a new user to the library.
+
+remove_user() – Removes a user from the library system.
+
+issue_book_to_user() – Issues a book to a user.
+
+return_book_from_user() – Allows a user to return a book.
+
+view_all_books() – Displays a list of all books in the library.
+
+view_all_users() – Displays a list of all registered users.
+
+
+
+Library Management System
+
+1. Add Book
+2. Remove Book
+3. Add User
+4. Remove User
+5. Issue Book to User
+6. Return Book from User
+7. Search Book
+8. View All Books
+9. View All Users
+0. Exit
